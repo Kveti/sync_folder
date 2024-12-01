@@ -139,7 +139,7 @@ def sync_folder(src_path: str, dest_path: str) -> None:
         if dir not in dest_dirs:
             path = os.path.join(dest_path, dir)
             mkdir(path)
-            log(f"CREATED {path} directory")
+            log(f"CREATED directory: {path}")
 
 
     # the loop will run sync for all subdirectories
